@@ -1,0 +1,27 @@
+.slider-wrapper {
+    position: relative;
+}
+
+.next-button,
+.prev-button {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+
+    transform: translateY(-50%);
+    opacity: 0;
+
+    transition: opacity 0.25s ease;
+
+    &__active {
+        opacity: 1;
+    }
+}
+
+.next-button {
+    right: -1%;
+}
+
+.prev-button {
+    left: -1%;
+}

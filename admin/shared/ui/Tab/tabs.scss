@@ -1,0 +1,11 @@
+.primary-invalid-tab {
+    color: #d14343 !important;
+    &::before {
+        background-color: #d14343 !important;
+    }
+}
+
+.secondary-invalid-tab {
+    background-color: #d14343 !important;
+    color: #ffffff !important;
+}

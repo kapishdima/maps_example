@@ -1,0 +1,47 @@
+$base-color: #ddd;
+
+.placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 2px;
+    overflow: hidden;
+    background: $base-color;
+    background-size: 600px;
+}
+
+.image {
+    border: 2px solid transparent;
+    transition: border-color 0.15s ease;
+    cursor: pointer;
+    &:hover {
+        .image--hovered {
+            opacity: 1;
+        }
+    }
+}
+
+.image--selected {
+    background-color: #0a1433;
+}
+
+.image--hovered {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #d8dae5;
+    opacity: 0;
+
+    transition: all 0.25s ease;
+}
+
+.editor-close {
+    position: absolute;
+    right: 1%;
+    top: 2%;
+}

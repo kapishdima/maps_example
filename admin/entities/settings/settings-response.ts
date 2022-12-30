@@ -1,0 +1,30 @@
+import { MediaResponseEntity } from "./../../processes/media/models/media-domain.entity";
+
+export type SettingsResponseEntity = {
+    id: number;
+    head_html: string;
+    after_body_start_html: string;
+    before_body_end_html: string;
+    main_block1_text1: string;
+    main_block1_text2: string;
+    main_exp_title: string;
+    main_exp_text1: string;
+    main_exp_text2: string;
+    main_expertise_title: string;
+    main_expertise_text: string;
+    main_black_title: string;
+    main_black_point1_title: string;
+    main_black_point1_text: string;
+    main_black_point2_title: string;
+    main_black_point2_text: string;
+    main_black_point3_title: string;
+    main_black_point3_text: string;
+    main_black_button_text: string;
+    main_partner_title: string;
+    main_partner_text: string;
+    facebook_url: string;
+    instagram_url: string;
+    footer_text: string;
+    blog_main_image: MediaResponseEntity;
+    media: MediaResponseEntity[];
+};

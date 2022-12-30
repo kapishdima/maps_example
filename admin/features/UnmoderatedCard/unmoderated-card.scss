@@ -1,0 +1,26 @@
+.unmoderated-card {
+    position: relative;
+}
+
+.unmoderated-title {
+    transition: opacity 0.15s ease;
+
+    &--hidden {
+        opacity: 0;
+    }
+}
+
+.unmoderated-actions {
+    position: absolute;
+    right: 32px;
+    top: 50%;
+
+    transform: translateY(-50%);
+    opacity: 0;
+
+    transition: opacity 0.25s ease;
+
+    &--visible {
+        opacity: 1;
+    }
+}
